@@ -1,0 +1,181 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilo del encabezado */
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://img.freepik.com/vector-premium/fondo-oscuro-textura-tela_448617-61.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Estilo de secciones */
+  section {
+    padding: 100px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .gallery img {
+    width: 300px;
+    margin: 10px;
+  }
+  
+  /* Estilo de formulario de contacto */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Estilo del pie de página */
+  footer {
+    background-color: #000;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Estilos adicionales futuristas */
+  h1,
+  h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  nav ul li a {
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ffffff;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4733ff;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  
+  nav ul li a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  section {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  section::before,
+  section::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #3336ffa8;
+    transform: rotate(45deg);
+    opacity: 0.1;
+  }
+  
+  section::before {
+    top: -50px;
+    left: -150px;
+  }
+  
+  section::after {
+    bottom: -50px;
+    right: -150px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  section {
+    animation: fadeIn 1s ease-out;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
